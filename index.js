@@ -29,8 +29,6 @@ function viewCart() {
 function total() {
   var total = 0;
   //for i in cart{
-
-  }
 }
 
 function removeFromCart(item) {
