@@ -21,12 +21,18 @@ function viewCart() {
   }
   else{
     var message = "In your cart, you have ";
-    for (let i=0; i<cart.length-1; i++){
+    for (let i=0; i<cart.length; i++){
       var item = cart[i];
-      message += `${item.itemName} at $${item.itemPrice}, `;
+      if (i === cart.length -1){
+        if (cart.legnth === 1){
+          message += `${item.itemName} at $${item.itemPrice}.`
+        }else{
+          message += `and ${item.itemName} at $${item.itemPrice}.`
+        }
+      }else{
+        message += `${item.itemName} at $${item.itemPrice}, `;
+      }
     }
-    item = cart.slice(-1)[0];//last item
-    message += `and ${item.itemName} at $${item.itemPrice}.`;
     return message;
   }
 }
