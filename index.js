@@ -24,7 +24,7 @@ function viewCart() {
     for (let i=0; i<cart.length; i++){
       var item = cart[i];
       if (i === cart.length -1){
-        if (cart.legnth === 1){
+        if (cart.length === 1){
           message += `${item.itemName} at $${item.itemPrice}.`
         }else{
           message += `and ${item.itemName} at $${item.itemPrice}.`
