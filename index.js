@@ -22,7 +22,7 @@ function viewCart() {
   else{
     var message = "In your cart, you have ";
     for (let i=0; i<cart.length-1; i++){
-      let item = cart[i];
+      var item = cart[i];
       message += `${item.itemName} at $${item.itemPrice}, `;
     }
     item = cart.slice(-1)[0];//last item
