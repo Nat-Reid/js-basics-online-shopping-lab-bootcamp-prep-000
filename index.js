@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var item = {itemName : item, itemPrice: Math.floor(Math.random()*100)};
   cart.push(item);
-  return "${item.itemName} has been added to your cart.";
+  return `${item.itemName} has been added to your cart.`;
 }
 
 function viewCart() {
@@ -21,13 +21,16 @@ function viewCart() {
     let item = cart[i];
     message += "${item.itemName} at $${item.itemPrice}, ";
   }
-  item = cart.slice(-1)[0];
-  message += "and ${item.itemName} at $${item.itemPrice}."
+  item = cart.slice(-1)[0];//last item
+  message += "and ${item.itemName} at $${item.itemPrice}.";
   return message;
 }
 
 function total() {
-  // write your code here
+  var total = 0;
+  for i in cart{
+    
+  }
 }
 
 function removeFromCart(item) {
