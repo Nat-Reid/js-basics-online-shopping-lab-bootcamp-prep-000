@@ -40,13 +40,19 @@ function viewCart() {
 function total() {
   var total = 0;
   for (let i=0; i<cart.length; i++){
-    total += cart[i]['itemPrice'];
+    total += cart[i]itemPrice;
   }
   return total;
 }
 
 function removeFromCart(item) {
-  // write your code here
+  for (let i=0; i<cart.length; i++){
+    if (cart[i]itemPrice === item){
+      cart.splice(i);
+      return cart;
+    }
+  }
+  return "That item is not in your cart.";
 }
 
 function placeOrder(cardNumber) {
