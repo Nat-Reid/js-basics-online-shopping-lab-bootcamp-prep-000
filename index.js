@@ -53,5 +53,5 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
-console.log(addToCart(apples));
+console.log(addToCart('apples'));
 total();
