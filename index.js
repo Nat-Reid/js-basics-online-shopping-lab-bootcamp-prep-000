@@ -10,14 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-   var item = {itemName : item, itemPrice: Math.floor(Math.random()*100)};
-   cart.push(item);
-   if (cart.contains(item)){
-     return "${item.itemName} has been added to your cart.";
-   }
-   else{
-     return "Error in adding item to cart";
-   }
+  var item = {itemName : item, itemPrice: Math.floor(Math.random()*100)};
+  cart.push(item);
+  return "${item.itemName} has been added to your cart.";
 }
 
 function viewCart() {
